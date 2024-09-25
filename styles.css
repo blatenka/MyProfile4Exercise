@@ -1,0 +1,163 @@
+/* Áp dụng style cho toàn bộ trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b2838;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background cho toàn trang */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/backgound.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+/* Khung ở giữa */
+.content-container {
+    max-width: 1000px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Làm khung trong suốt một chút */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.steam-logo {
+    width: 150px;
+}
+
+.nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.profile-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.profile-info h1 {
+    font-size: 2rem;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+}
+
+.level-info {
+    text-align: right;
+}
+
+.level-info span {
+    font-size: 1.2rem;
+}
+
+.level-info h2 {
+    font-size: 2rem;
+    margin-top: 5px;
+    color: #c11c2e;
+}
+
+.badge img {
+    width: 50px;
+}
+
+/* Showcase */
+.showcase {
+    margin: 40px 0;
+}
+
+.showcase h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.showcase a {
+    display: inline-block; /* Để sử dụng margin */
+    margin-bottom: 15px; /* Khoảng cách giữa các liên kết */
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #007bff; /* Màu chữ liên kết */
+}
+.showcase a:hover {
+    text-decoration: underline; /* Gạch chân khi di chuột qua */
+}
+.games {
+    display: flex;
+    gap: 20px;
+}
+
+.game img {
+    width: 200px;
+    height: auto;
+}
+
+.game p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Badges */
+.badges {
+    margin: 40px 0;
+}
+
+.badges h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.badge-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.badge-icons img {
+    width: 50px;
+    margin-right: 10px;
+}
